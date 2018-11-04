@@ -54,4 +54,28 @@ public class RocketFactory {
                 destination,
                 launchStartTime);
     }
+
+    public Rocket createRussianRocketFiveStage(String destination, String launchStartTime) {
+        return new Rocket(
+                this.size,
+                5,
+                this.startPower,
+                this.maxVelocity,
+                "Roskosmos",
+                "Plesetsk",
+                destination,
+                launchStartTime);
+    }
+
+    public Rocket createAustralianRocket(int stageNumber, String destination, String launchStartTime) {
+        return new Rocket(
+                this.size,
+                stageNumber,
+                this.startPower,
+                this.maxVelocity,
+                "Australian Rockets LLC",
+                "Sydney Space Commands",
+                destination,
+                launchStartTime);
+    }
 }

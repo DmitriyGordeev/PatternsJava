@@ -13,5 +13,8 @@ public class main {
         rocketFactory.setStartPower(80000.0f);
 
         Rocket rocket = rocketFactory.createRocket();
+        Rocket russianRocket = rocketFactory.createRussianRocketFiveStage("Moon", "18:00 MSK");
+        Rocket australianRocket = rocketFactory.createAustralianRocket(3, "Moon", "19:00 Syd");
+        Rocket secondRussianRocket = rocketFactory.createRussianRocketFiveStage("Mercury", "21:00 MSK");
     }
 }

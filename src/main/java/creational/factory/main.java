@@ -15,7 +15,7 @@ public class main {
         Ward fireWard = wardFactory.createFireWard(10.0f, 12.0f);
         Ward frostWard = wardFactory.createFrostWard(90.0f);
 
-        System.out.println("FireWard = " + wardEffect(fireWard));
-        System.out.println("FrostWard = " + wardEffect(frostWard));
+        float fireWardEffect = wardEffect(fireWard);
+        float frostWardEffect = wardEffect(frostWard);
     }
 }

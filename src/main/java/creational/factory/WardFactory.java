@@ -27,10 +27,10 @@ public class WardFactory {
     }
 
     public Ward createFireWard(float igniteDamage, float igniteRange) {
-        return new FireWard(igniteDamage, igniteRange, defense, duration);
+        return new FireWard(igniteDamage, igniteRange, this.defense, this.duration);
     }
 
     public Ward createFrostWard(float freezeEffect) {
-        return new FrostWard(freezeEffect, defense, duration);
+        return new FrostWard(freezeEffect, this.defense, this.duration);
     }
 }

@@ -12,8 +12,4 @@ public class SwordFactory extends WeaponFactory {
     public Weapon createWeapon() {
         return new Sword(this.bleedEffect, this.damage, this.attackSpeed);
     }
-
-    public Weapon createWeapon(float bleedEffect) {
-        return new Sword(bleedEffect, this.damage, this.attackSpeed);
-    }
 }

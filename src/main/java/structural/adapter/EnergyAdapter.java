@@ -1,12 +1,18 @@
 package structural.adapter;
 
 public class EnergyAdapter {
-    public static ElectricEnergy transform(EmissionEnergy emissionEnergy) {
-        boolean magnetized = false;
-        if(emissionEnergy.getHeatRange() > 100.0f) {
-            magnetized = true;
-        }
 
-        return new ElectricEnergy(emissionEnergy.getAmount(), magnetized);
+    RadioactiveOrb orb;
+
+    public EnergyAdapter(RadioactiveOrb orb) {
+        this.orb = orb;
     }
+
+    public ElectricEnergy transformEnergyNature() {
+        EmissionEnergy energyPortion = orb.emissionEnergy();
+        boolean magnetized = (energyPortion.getHeatRange() > 100.0f);
+        ElectricEnergy electricEnergy = new ElectricEnergy(energyPortion.getAmount(), magnetized);
+        return electricEnergy;
+    }
+
 }

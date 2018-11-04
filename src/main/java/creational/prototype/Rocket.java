@@ -1,6 +1,6 @@
 package creational.prototype;
 
-public class Rocket {
+public class Rocket implements Cloneable {
 
     private float size;
     private int   stageNumber;
@@ -93,6 +93,7 @@ public class Rocket {
         }
     }
 
+    @Override
     public Rocket clone() {
         Rocket output = new Rocket(
                 this.size,

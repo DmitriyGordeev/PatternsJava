@@ -1,12 +1,17 @@
 package structural.bridge;
 
-public class Rocket extends Turret {
-
-    public Rocket(float power) {
-        super(power);
+public class Rocket extends TurretGun {
+    public Rocket(float power, float reloadTime) {
+        super(power, reloadTime);
     }
 
+    @Override
     public float attack() {
-        return power * 1.0f + 12.0f;
+        return power * 1.2f;
+    }
+
+    @Override
+    public void reload() {
+        System.out.println("Rockets are reloaded");
     }
 }

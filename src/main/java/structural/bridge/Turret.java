@@ -1,11 +1,26 @@
 package structural.bridge;
 
-public abstract class Turret {
-    public float power;
+public class Turret {
 
-    public Turret(float power) {
-        this.power = power;
+    public TurretGun mainGun;
+
+    public Turret(TurretGun mainGun) {
+        this.mainGun = mainGun;
     }
 
-    public abstract float attack();
+    public float attack() {
+        return this.mainGun.attack();
+    }
+
+    public void reload() {
+        this.mainGun.reload();
+    }
+
+    public void setMainGun(TurretGun mainGun) {
+        this.mainGun = mainGun;
+    }
+
+    public TurretGun getMainGun() {
+        return mainGun;
+    }
 }

@@ -1,36 +1,19 @@
 package creational.abstractfactory;
 
-public class SwordFactory {
-    float damage;
-    float attackSpeed;
+public class SwordFactory extends WeaponFactory {
 
-    public SwordFactory() {
-        this.damage = 0.0f;
-        this.attackSpeed = 0.0f;
+    private float bleedEffect;
+
+    public void setBleedEffect(float bleedEffect) {
+        this.bleedEffect = bleedEffect;
     }
 
-    public void setAttackSpeed(float attackSpeed) {
-        this.attackSpeed = attackSpeed;
+    @Override
+    public Weapon createWeapon() {
+        return new Sword(this.bleedEffect, this.damage, this.attackSpeed);
     }
 
-    public void setDamage(float damage) {
-        this.damage = damage;
+    public Weapon createWeapon(float bleedEffect) {
+        return new Sword(bleedEffect, this.damage, this.attackSpeed);
     }
-
-    public float getAttackSpeed() {
-        return attackSpeed;
-    }
-
-    public float getDamage() {
-        return damage;
-    }
-
-    public Sword createIronSword(float bleedEffect) {
-        return new IronSword(bleedEffect, this.damage, this.attackSpeed);
-    }
-
-    public Sword createMagicSword(float magicExplosion) {
-        return new MagicSword(magicExplosion, this.damage, this.attackSpeed);
-    }
-
 }

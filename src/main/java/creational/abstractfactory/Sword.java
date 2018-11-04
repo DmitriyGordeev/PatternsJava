@@ -1,14 +1,16 @@
 package creational.abstractfactory;
 
-public abstract class Sword {
-    float damage;
-    float attackSpeed;
+public class Sword extends Weapon {
 
-    public Sword(float damage, float attackSpeed) {
-        this.damage = damage;
-        this.attackSpeed = attackSpeed;
+    float bleedEffect;
+
+    public Sword(float bleedEffect, float damage, float attackSpeed) {
+        super(damage, attackSpeed);
+        this.bleedEffect = bleedEffect;
     }
 
-    public abstract float attack();
-
+    @Override
+    public float attack() {
+        return 1000 * bleedEffect + damage * attackSpeed;
+    }
 }

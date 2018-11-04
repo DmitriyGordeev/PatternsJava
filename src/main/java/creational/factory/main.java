@@ -2,20 +2,20 @@ package creational.factory;
 
 public class main {
 
-    public static float wardEffect(Ward ward) {
-        return 0.01f * ward.defense * ward.duration;
+    public static float wardEffect(Bolt bolt) {
+        return 0.01f * bolt.damage * bolt.maxRange;
     }
 
     public static void main(String[] args) {
 
-        WardFactory wardFactory = new WardFactory();
-        wardFactory.setDefense(10.0f);
-        wardFactory.setDuration(100);
+        BoltFactory wardFactory = new BoltFactory();
+        wardFactory.setDamage(10.0f);
+        wardFactory.setMaxRange(100);
 
-        Ward fireWard = wardFactory.createFireWard(10.0f, 12.0f);
-        Ward frostWard = wardFactory.createFrostWard(90.0f);
+        Bolt fireBolt = wardFactory.createFireBolt(10.0f, 12.0f);
+        Bolt frostBolt = wardFactory.createFrostBolt(90.0f);
 
-        float fireWardEffect = wardEffect(fireWard);
-        float frostWardEffect = wardEffect(frostWard);
+        float fireBoltEffect = wardEffect(fireBolt);
+        float frostBoltEffect = wardEffect(frostBolt);
     }
 }

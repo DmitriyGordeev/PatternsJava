@@ -44,38 +44,44 @@ public class RocketFactory {
     }
 
     public Rocket createRocket() {
-        return new Rocket(
-                size,
-                stageNumber,
-                startPower,
-                maxVelocity,
-                manufacturerName,
-                spaceCenterName,
-                destination,
-                launchStartTime);
+        Rocket.Builder builder = new Rocket.Builder();
+        builder.setDestination(this.destination)
+                .setLaunchStartTime(this.launchStartTime)
+                .setManufacturerName(this.manufacturerName)
+                .setMaxVelocity(this.maxVelocity)
+                .setSpaceCenterName(this.spaceCenterName)
+                .setSize(this.size)
+                .setStageNumber(this.stageNumber)
+                .setStartPower(this.startPower);
+
+        return builder.build();
     }
 
     public Rocket createRussianRocketFiveStage(String destination, String launchStartTime) {
-        return new Rocket(
-                this.size,
-                5,
-                this.startPower,
-                this.maxVelocity,
-                "Roskosmos",
-                "Plesetsk",
-                destination,
-                launchStartTime);
+        Rocket.Builder builder = new Rocket.Builder();
+        builder.setDestination(destination)
+                .setLaunchStartTime(launchStartTime)
+                .setManufacturerName("Manufacturer")
+                .setMaxVelocity(this.maxVelocity)
+                .setSpaceCenterName("Plesetsk")
+                .setSize(this.size)
+                .setStageNumber(5)
+                .setStartPower(this.startPower);
+
+        return builder.build();
     }
 
     public Rocket createAustralianRocket(int stageNumber, String destination, String launchStartTime) {
-        return new Rocket(
-                this.size,
-                stageNumber,
-                this.startPower,
-                this.maxVelocity,
-                "Australian Rockets LLC",
-                "Sydney Space Commands",
-                destination,
-                launchStartTime);
+        Rocket.Builder builder = new Rocket.Builder();
+        builder.setDestination(destination)
+                .setLaunchStartTime(launchStartTime)
+                .setManufacturerName("Australian Rockets LLC")
+                .setMaxVelocity(this.maxVelocity)
+                .setSpaceCenterName("Sydney Space Commands")
+                .setSize(this.size)
+                .setStageNumber(stageNumber)
+                .setStartPower(this.startPower);
+
+        return builder.build();
     }
 }

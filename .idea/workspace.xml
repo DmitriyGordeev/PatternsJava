@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f6c3f48-44bd-4d68-af4a-96e7cc5acc0c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/structural/flyweight/Sprite.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/structural/flyweight/SpriteFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/structural/flyweight/SpriteType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/structural/flyweight/main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/structural/bridge/Laser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/structural/bridge/Laser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/structural/bridge/MainGun.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/structural/bridge/Rocket.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/structural/bridge/Rocket.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/structural/bridge/Turret.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/structural/bridge/Turret.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/structural/bridge/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/structural/bridge/main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/structural/flyweight/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/structural/flyweight/main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -51,12 +42,12 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="35" />
-          <entry key="java" value="12745" />
+          <entry key="java" value="12825" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="12745" />
+          <entry key="JAVA" value="12825" />
           <entry key="PLAIN_TEXT" value="35" />
         </counts>
       </usages-collector>
@@ -86,11 +77,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/structural/flyweight/SpriteFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="540">
+              <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -98,11 +89,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/structural/flyweight/main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="5" column="57" selection-start-line="5" selection-start-column="57" selection-end-line="5" selection-end-column="57" />
+            <state relative-caret-position="300">
+              <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -466,8 +457,8 @@
         <option value="$PROJECT_DIR$/src/main/java/structural/decorator/FireArrow.java" />
         <option value="$PROJECT_DIR$/src/main/java/structural/flyweight/Sprite.java" />
         <option value="$PROJECT_DIR$/src/main/java/structural/flyweight/SpriteType.java" />
-        <option value="$PROJECT_DIR$/src/main/java/structural/flyweight/main.java" />
         <option value="$PROJECT_DIR$/src/main/java/structural/flyweight/SpriteFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/structural/flyweight/main.java" />
       </list>
     </option>
   </component>
@@ -603,7 +594,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541577440922" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541577678892" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -1121,20 +1112,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/structural/flyweight/main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="5" column="57" selection-start-line="5" selection-start-column="57" selection-end-line="5" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/structural/flyweight/SpriteFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="540">
+          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/structural/flyweight/main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
         </state>
       </provider>
     </entry>

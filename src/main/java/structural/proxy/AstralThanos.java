@@ -9,10 +9,12 @@ public class AstralThanos {
     }
 
     public float attack() {
+        System.out.println("Thanos attacking!");
         return thanos.attack();
     }
 
     public boolean grip(Enemy enemy) {
+        System.out.println("Thanos doing grip!");
         return thanos.grip(enemy);
     }
 
